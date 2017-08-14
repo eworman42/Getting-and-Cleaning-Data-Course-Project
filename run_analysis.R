@@ -126,5 +126,5 @@ tidyData    = aggregate(finalDataNoActivityType[,names(finalDataNoActivityType)
 tidyData    = merge(tidyData,activity_Type,by='activityId',all.x=TRUE);
 
 # Export the tidyData set 
-write.table(tidyData, './tidyData.txt',row.names=TRUE,sep='\t'); # Writes tidyData file
+write.table(tidyData, './tidyData.txt',row.names=F,sep='\t'); # Writes tidyData file
 message("Writing to WD") # Confirms file is written
